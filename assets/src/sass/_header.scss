@@ -1,0 +1,12 @@
+header {
+    .navbar-nav {
+        li {
+            padding: 1.5rem 1rem; 
+            cursor: pointer;
+            &.active {
+                background: #F15B40;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-	"name": "century-tower",
+	"name": "project-interview",
 	"version": "1.0.0",
 	"description": "",
 	"author": "",
@@ -23,11 +23,9 @@
 		"webpack-cli": "^3.3.8"
 	},
 	"dependencies": {
-		"@fancyapps/fancybox": "^3.5.7",
 		"bootstrap": "^4.5.0",
 		"font-awesome": "^4.7.0",
 		"jquery": "^3.5.1",
-		"popper.js": "^1.16.1",
 		"slick-carousel": "^1.8.1"
 	}
 }
