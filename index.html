@@ -12,23 +12,23 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="top-head bg-dark  py-2">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center text-white">
-                    <img src="./assets/src/svg/phone.svg" alt="" />
-                    <p class="my-0 ml-3"><span class="text-primary">CONTACT 1: </span>0387271786 (DUONG)</p>
-                    <p class="my-0 ml-3"><span class="text-primary">CONTACT 2: </span>0987900930 (TRINH)</p>
-                    <p class="my-0 ml-3"><span class="text-primary">KOREAN SUPPORT: </span>+82 10-2045-3645</p>
+        <div class="top-head bg-dark py-2">
+            <div class="container contact-infor">
+                <div class="text-white contact order-2 d-md-flex">
+                    <img class="d-none d-md-block" src="./assets/src/svg/phone.svg" alt="" />
+                    <p class="my-0 ml-md-3"><span class="text-primary">CONTACT 1: </span>0387271786 (DUONG)</p>
+                    <p class="my-0 ml-md-3"><span class="text-primary">CONTACT 2: </span>0987900930 (TRINH)</p>
+                    <p class="my-0 ml-md-3"><span class="text-primary">KOREAN SUPPORT: </span>+82 10-2045-3645</p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <img src="./assets/src/svg/home.svg" alt="" />
+                <div class="d-flex align-items-center order-1">
+                    <img  src="./assets/src/svg/home.svg" alt="" />
                     <p class="my-0 text-white text-uppercase ml-3">TÌm chúng tôi</p>
                 </div>
             </div>
         </div>
         <nav class="navbar navbar-expand-md p-0 ">
             <div class="container px-md-3 px-xl-5">
-                <div class="navbar-brand mr-5 d-flex align-items-center">
+                <div class="navbar-brand mr-md-5 d-flex align-items-center">
                     <img src="./assets/src/img/logo.png" alt="" height="40">
                     <div>
                         <p class="text-uppercase my-0 ml-3">Danh mục sản phẩm</p>
@@ -38,13 +38,13 @@
                     <span class="icon"></span>
                 </button>
                 <div class="navbar-collapse position-relative collapse" id="navbar_sd">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="active">Giới thiệu</li>
-                        <li>Tài liệu 2D</li>
-                        <li>Tài liệu 3D</li>
-                        <li>Tin tức</li>
-                        <li>Tuyển dụng</li>
-                        <li>Liên hệ</li>
+                    <ul class="navbar-nav ml-auto nav-list">
+                        <li class="active nav-link">Giới thiệu</li>
+                        <li class="nav-link">Tài liệu 2D</li>
+                        <li class="nav-link">Tài liệu 3D</li>
+                        <li class="nav-link">Tin tức</li>
+                        <li class="nav-link">Tuyển dụng</li>
+                        <li class="nav-link">Liên hệ</li>
                     </ul>
                 </div>
             </div>
@@ -53,23 +53,28 @@
 
     <!-- Cover -->
     <section class="cover">
-        <div class="cover-slider">
-            <img src="/assets/src/img/cover-01.jpg" alt="">
-            <img src="/assets/src/img/cover-01.jpg" alt="">
-            <img src="/assets/src/img/cover-01.jpg" alt="">
-            <img src="/assets/src/img/cover-01.jpg" alt="">
+        <div class="cover-slider slick-carousel">
+            <div>
+                <img class="img-cover" src="/assets/src/img/cover-01.jpg" alt="" />
+            </div>
+            <div>
+                <img class="img-cover" src="/assets/src/img/cover-01.jpg" alt="" />
+            </div>
+            <div>
+                <img class="img-cover" src="/assets/src/img/cover-01.jpg" alt="" />
+            </div>
         </div>
     </section>
 
     <!-- Introdue -->
-    <section class="introduce">
+    <section class="introduce py-md-7 py-4 ">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pr-md-5">
+                <div class="col-md-6 pr-md-5 animation fade-in">
                     <img class="object-fit-cover w-100 h-100" src="/assets/src/img/introduce-01.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <h2>Chúng tôi <span class="text-primary">cố gắng</span> <br/> để làm hài lòng khách hàng của chúng tôi</h2>
+                    <h2>Chúng tôi <span class="text-primary ">cố gắng</span> <br/> để làm hài lòng khách hàng của chúng tôi</h2>
                     <h5 class="my-4 font-weight-bold font-italic">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.</h5>
                     <h5>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.</h5>
                     <div class="mt-4 row intro-list">
@@ -117,21 +122,414 @@
     </section>
 
     <!-- Product -->
-    <section class="product position-relative">
-        <img class="cover position-absolute" src="/assets/src/img/product-bg.jpg" alt="">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>SAN PHAM</h2>
-                    <p>loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+    <section class="product position-relative py-5 py-md-7">
+        <img class="cover position-absolute" src="/assets/src/img/product-bg.jpg" alt="" />
+        <div class="container text-white">
+            <div class="row list-product">
+                <div class="col-md-4 h-auto item animation fade-in-left">
                     <div>
-                        <img src="/assets/src/svg/right-arrow.svg" alt="">
-                        <small>xem tat ca</small>
+                        <h2 class="text-uppercase">Sản phẩm</h2>
+                        <p class="my-4 text-white-50">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        <strong class="text-uppercase ml-3">Xem tất cả</strong>
+                    </div>
+                </div>
+                <div class="col-md-4 h-auto item">
+                    <div class="detail">
+                        <div>
+                            <h5 class="text-uppercase">Thiết bị <br/> khí nén</h5>
+                            <p class="my-4 text-white-50 content">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center watchmore">
+                                <div class="arrow">
+                                    <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                                </div>
+                                <strong class="text-uppercase ml-3">Xem sản phẩm</strong>
+                            </div>
+                            <img class="img-product" src="/assets/src/svg/product-05.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 h-auto item">
+                    <div class="detail">
+                        <div>
+                            <h5 class="text-uppercase">Thiết bị <br/> chân không</h5>
+                            <p class="my-4 text-white-50 content">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center watchmore">
+                                <div class="arrow">
+                                    <img  src="/assets/src/svg/right-arrow.svg" alt="">
+                                </div>
+                                <strong class="text-uppercase ml-3">Xem sản phẩm</strong>
+                            </div>
+                            <img class="img-product" src="/assets/src/svg/product-04.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 h-auto item item2">
+                    <div class="detail">
+                        <div>
+                            <h5 class="text-uppercase">Thiết bị <br/>chuyển động</h5>
+                            <p class="my-4 text-white-50 content">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center watchmore">
+                                <div class="arrow">
+                                    <img  src="/assets/src/svg/right-arrow.svg" alt="">
+                                </div>
+                                <strong class="text-uppercase ml-3">Xem sản phẩm</strong>
+                            </div>
+                            <img class="img-product" src="/assets/src/svg/product-03.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 h-auto item item2">
+                    <div class="detail">
+                        <div>
+                            <h5 class="text-uppercase">Robot <br/> Đơn trục</h5>
+                            <p class="my-4 text-white-50 content">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center watchmore">
+                                <div class="arrow">
+                                    <img  src="/assets/src/svg/right-arrow.svg" alt="">
+                                </div>
+                                <strong class="text-uppercase ml-3">Xem sản phẩm</strong>
+                            </div>
+                            <img class="img-product" src="/assets/src/svg/product-02.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 h-auto item item2">
+                    <div class="detail">
+                        <div>
+                            <h5 class="text-uppercase">Thiết bị <br/> khác</h5>
+                            <p class="my-4 text-white-50 content">loremLorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center watchmore">
+                                <div class="arrow">
+                                    <img  src="/assets/src/svg/right-arrow.svg" alt="">
+                                </div>
+                                <strong class="text-uppercase ml-3">Xem sản phẩm</strong>
+                            </div>
+                            <img class="img-product" src="/assets/src/svg/product-01.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- New Product -->
+    <section class="new-product mt-5">
+        <div class="container">
+            <div class="product-title">
+                <h2 class="font-weight-bold animation fade-in-left">Sản phẩm mới</h2>
+                <ul class="list-item nav-list">
+                    <li class="active nav-link">Khí nén</li>
+                    <li class="nav-link">Thiết bị chân không</li>
+                    <li class="nav-link">Thiết bị chuyển động</li>
+                    <li class="nav-link">Robot đơn trục</li>
+                    <li class="nav-link">Thiết bị khác</li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-list-item px-md-5 mt-5">
+            <div class="row">
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-01.jpg" alt="" />
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-02.jpg" alt="" />
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Miniature type</small>
+                    </div>
+                    
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-03.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-03.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-02.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-01.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-01.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-03.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-02.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-01.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-02.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <div class="item-img">
+                        <img class="img-img" src="/assets/src/img/product-01.jpg" alt="" />                        
+                        <div class="arrow">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="px-3 title">
+                        <small class="font-weight-bold">Direct Type / Pilot Type / Flange Type</small>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="container d-flex justify-content-end mt-4">
+            <div class="d-flex align-items-center ml-auto">
+                <div class="arrow">
+                    <img src="/assets/src/svg/right-arrow.svg" alt="" />
+                </div>
+                <small class="ml-2">Xem tất cả sản phẩm</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand -->
+    <section class="brand mt-md-7 mt-4">
+        <div class="container position-relative">
+            <div class="row list-brand">
+                <div class="col-6 col-md-2 offset-md-1 item">
+                    <img src="/assets/src/img/brand/brand-02.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-03.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-04.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-05.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-06.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 offset-md-1 item">
+                    <img src="/assets/src/img/brand/brand-07.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-08.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-09.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-10.png" alt="">
+                </div>
+                <div class="col-6 col-md-2 item">
+                    <img src="/assets/src/img/brand/brand-11.png" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="arrow bg-dark mr-2">
+                    <img src="/assets/src/svg/left-arrow.svg" alt="">
+                </div>
+                <div class="arrow">
+                    <img src="/assets/src/svg/right-arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="img-bgr">
+                <img src="/assets/src/img/footer-logo.png" alt="" width="50%" />
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- News -->
+    <section class="news pb-4 mt-4 mt-md-0">
+        <div class="container">
+            <h2 class="animation fade-in-left">Bài viết mới nhất</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="img-news position-relative">
+                        <img src="/assets/src/img/news-01.jpg" alt="" width="100%" />
+                        <div class="date-time">
+                            <small>25 tháng 12, 2021</small>
+                        </div>
+                    </div>
+                    <div class="pr-4">
+                        <h6 class="mt-3 font-weight-bold">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. </h6>
+                        <small>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500 </small>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end mt-4">
+                        <div class="arrow mr-2">
+                            <img src="/assets/src/svg/right-arrow.svg" alt="">
+                        </div>
+                        <strong>Xem chi tiết</strong>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0">
+                    <div>
+                        <div class="img-news position-relative">
+                            <img src="/assets/src/img/news-02.jpg" alt="" width="100%" />
+                            <div class="date-time">
+                                <small>25 tháng 12, 2021</small>
+                            </div>
+                        </div>
+                        <h6 class="font-weight-bold">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. </h6>
+                    </div>
+                    <div>
+                        <div class="img-news position-relative">
+                            <img src="/assets/src/img/news-03.jpg" alt="" width="100%" />
+                            <div class="date-time">
+                                <small>25 tháng 12, 2021</small>
+                            </div>
+                        </div>
+                        <h6 class="font-weight-bold">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-5">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-primary">Bạn có nhu cầu cần tư vấn</h5>
+                    <h2>Gọi cho chúng tôi</h2>
+                    <div class="contact-footer">
+                        <div>
+                            <h2>03 87 271 786 <span class="opacity-0 opacity-md-1">/</span></h2>
+                            <small class="text-white-50">Contact 1: LE HUNG DUONG</small>
+                        </div> 
+                        <div class="ml-md-2">
+                            <h2>0987 900 930</h2>
+                            <small class="text-white-50">Contact 2: LE VAN TRINH</small>
+                        </div>
+                    </div>
+                    <div class="my-4 d-md-flex">
+                       <div class="">
+                            <small>Unit 1201, An-Gang Private tower 1cha, Magok Joonang-ro 165, <br/> Gangseo-ku, Seoul, Korea</small>
+                            <br/>
+                            <small>Postal code: 07788</small>
+                            <br/>
+                            <small>Email: thcgroup3@tanhay.com</small>
+                       </div>
+                       <div class="list-social ml-md-3 mt-3 mt-md-0">
+                            <img src="/assets/src/svg/facebook.svg" alt="">
+                            <img src="/assets/src/svg/twitter.svg" alt="">
+                            <img src="/assets/src/svg/youtube.svg" alt="">
+                       </div>
+                    </div>
+                    <ul class="footer-nav p-0 m-0">
+                        <li class="active mt-2 mr-md-2">Giới thiệu</li>
+                        <li class="mt-2 mr-md-2">Tài liệu 2D</li>
+                        <li class="mt-2 mr-md-2">Tài liệu 3D</li>
+                        <li class="mt-2 mr-md-2">Tin tức</li>
+                        <li class="mt-2 mr-md-2">Tuyển dụng</li>
+                        <li class="mt-2 mr-md-2">Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-3 animation fade-in-zoom">
+                    <img src="/assets/src/img/footer-logo.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </footer>
+
 <script src="assets/dist/bundle.js?v=10"></script>
 </body>
 </html>

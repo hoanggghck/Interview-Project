@@ -9,4 +9,71 @@ header {
             }
         }
     }
+    border-bottom: 3px solid #F15B40;
+
+    .contact-infor {
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .navbar-toggler {
+        height: 33px;
+        border: unset;
+        z-index: 999;
+
+        &:focus {
+            outline: none;
+        }
+
+        .icon {
+            display: block;
+            height: 2px;
+            width: 28px;
+            position: relative;
+            background-color: transparent;
+
+            &:before,
+            &:after {
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                content: '';
+                left: 0;
+                background-color: $secondary;
+                transition: all 0.3s;
+            }
+
+            &:before {
+                top: 0px;
+                transform: rotate(225deg);
+            }
+            &:after {
+                transform: rotate(-225deg);
+                bottom: 0px;
+            }
+        }
+
+        &.collapsed {
+            .icon {
+                background-color: $secondary;
+
+                &:before {
+                    background-color: $secondary;
+                    top: -9px;
+                    transform: rotate(0);
+                }
+                &:after {
+                    background-color: $secondary;
+                    transform: rotate(0);
+                    bottom: -9px;
+                }
+            }
+        }
+
+    }
 }
