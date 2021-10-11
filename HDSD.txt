@@ -1,0 +1,2 @@
+Bước 1 : chạy npm i để cài đặt các package
+Bước 2 : mở index.html :)
