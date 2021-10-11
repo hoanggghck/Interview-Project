@@ -1,0 +1,33 @@
+{
+	"name": "century-tower",
+	"version": "1.0.0",
+	"description": "",
+	"author": "",
+	"license": "ISC",
+	"main": "main.js",
+	"scripts": {
+		"dev": "webpack",
+		"build": "webpack"
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.3.1",
+		"css-loader": "^3.2.0",
+		"file-loader": "^4.2.0",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.13.1",
+		"postcss-loader": "^3.0.0",
+		"precss": "^4.0.0",
+		"sass-loader": "^7.3.1",
+		"style-loader": "^1.0.0",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.8"
+	},
+	"dependencies": {
+		"@fancyapps/fancybox": "^3.5.7",
+		"bootstrap": "^4.5.0",
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.5.1",
+		"popper.js": "^1.16.1",
+		"slick-carousel": "^1.8.1"
+	}
+}

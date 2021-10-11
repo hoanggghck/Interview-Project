@@ -1,0 +1,7 @@
+*error_log
+*node_modules
+*package-lock.json
+*.DS_Store
+exports/.htaccess
+exports/.htpasswd
+exports/data.csv

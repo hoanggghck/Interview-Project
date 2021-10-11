@@ -1,0 +1,69 @@
+$fa-font-path:      "~font-awesome/fonts" !default;
+
+$primary:           #37398E !default;
+$secondary:         #E2D398 !default;
+$tertiary:          #ED5C19 !default;
+$light:             #f9fafb !default;
+$dark:              #656565 !default;
+$white:             #FFFFFF !default;
+$black:             #000000 !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge((
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.75),
+    3: ($spacer * 1.5),
+    4: ($spacer * 2.0),
+    5: ($spacer * 3.0),
+    6: ($spacer * 4.0),
+    7: ($spacer * 5.0),
+    8: ($spacer * 6.0),
+    9: ($spacer * 7.5)
+    ), $spacers
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 760px,
+    md: 1020px,
+    lg: 1280px,
+    xl: 1680px
+) !default;
+
+$container-max-widths: (
+    sm: 720px,
+    md: 960px,
+    lg: 1230px,
+    xl: 1230px
+) !default;
+
+$grid-gutter-width:         48px !default;
+
+$font-family-base:			'SegoeUI', sans-serif !default;
+$headings-font-family:      'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:			'SVN-Miller Banner', serif !default;
+$font-family-script:		'SFU-Belle', serif !default;
+$font-size-base:             0.9375rem !default;
+
+$h1-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+// Form
+$input-font-weight:         600;
+$input-border-radius:       0;
+$input-color:               $white;
+$input-bg:                  transparent;
+$input-padding-x:           0 !default;
+$form-group-margin-bottom:  1.5rem !default;
+$btn-border-radius:         2px !default;
+
+$table-cell-padding:        1rem 1rem 1rem 0 !default;
+$table-border-color:        rgba( $white, 0.2 );
+
